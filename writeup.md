@@ -76,11 +76,10 @@ Also if we consider different weather conditions like snow , this algorithm will
 If the lanes are too much curved then , the output of the hough transform would not be suitable for our pipeline.The mean slope line plotted will not be similar to the curve itself.
 
 
-
 ### 3. Suggest possible improvements to your pipeline
 
 A possible improvement to this pipeline would be using other color formats like HSV and HLS instead of RGB. Thresholding these different channels might help in detecting lane pixels in different light conditions.
 
-Also averaging the final slopes from previous frames in the video and then using it to plot lines in next frame , would help in avoiding the jittery motion of the drawn lane lines.
+Also averaging the final slopes from previous frames in the video and then using it to plot lines in next frame , would help in avoiding the jittery motion of the drawn lane lines. A low pass filter is what it really is.
 
 
